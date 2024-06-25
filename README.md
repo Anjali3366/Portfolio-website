@@ -1,5 +1,5 @@
 # Portfolio-website
-This is the first project after learning the basic of Html , css and javascript. start it 
+This is the kind of template that provide the portfolio for video editor .
 # Authorize by 
  Anjali Tomar
  
