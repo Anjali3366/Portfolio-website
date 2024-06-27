@@ -23,7 +23,7 @@ html {
 body {
   background: var(--bg-color);
   color: var(--text-color);
-  padding:2rem;
+  padding: 2rem;
 }
 
 .header {
@@ -55,10 +55,9 @@ body {
 .logo:hover {
   transform: scale(1.1);
 }
-.logo-img{
+.logo-img {
   width: 6rem;
   height: 7rem;
-  
 }
 .logo span {
   text-shadow: 0 0 25px var(--main-color);
@@ -136,7 +135,7 @@ span {
   top: 3rem;
   width: 32vw;
   height: 50vh;
-  
+
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   cursor: pointer;
@@ -234,7 +233,7 @@ span {
   background-color: var(--bg-color);
   position: absolute;
   width: calc(100%+8px);
-  height: 100%;
+  height: 80%;
   border-left: 3px solid var(--bg-color);
   right: -8px;
   animation: cursor 0.6s infinite, typing 20s steps(12) infinite;
@@ -290,6 +289,7 @@ span {
 .services {
   background: var(--bg-color);
   color: black;
+  margin-bottom: 3rem;
 }
 
 .heading {
@@ -326,10 +326,9 @@ span {
   display: flex;
   flex-direction: column;
   text-align: left;
-  max-height: 300px;
   justify-content: left;
   align-items: baseline;
-  padding: 5rem 5rem;
+  padding: 3rem;
 }
 
 .service-info h4 {
@@ -421,44 +420,42 @@ span {
   font-size: 1.3rem;
 }
 
-
-.skills{
-  background:#171616;
-display: flex;
-justify-content: center;
-align-items: center;
-
+.skills {
+  background: #171616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.skill-heading{
+.skill-heading {
   font-size: 6rem;
   margin-top: 1rem;
   margin-bottom: 5rem;
   color: white;
   text-align: center;
 }
-.skills-container{
+.skills-container {
   width: 100%;
   /* height: 100vh; */
   background-size: cover;
 }
 
-.skill-item{
-  width: 80%;
+.skill-item {
+  width: 95%;
   min-height: fit-content;
 
-  background: linear-gradient(to bottom,white, rgba(53, 201, 188, 0.872));
+  background: linear-gradient(to bottom, white, rgba(53, 201, 188, 0.872));
 
-    border-radius: 1rem;
-    margin: 1rem 0rem 0 10rem;
-    padding: 1.5rem;
-    display: grid;
- grid-template-columns: repeat(3,1fr);;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.eachSkills{
-  height: 15rem;
-  width: 18rem;
-  margin: 2rem 3rem;
+.eachSkills {
+  height: 13rem;
+  width: 14rem;
+  margin: 2rem;
   padding: 10px 20px;
   cursor: pointer;
   display: flex;
@@ -469,89 +466,79 @@ align-items: center;
   justify-content: center;
   background-color: #05001f;
   border-radius: 1rem;
-  padding:0.5rem;
+  padding: 0.5rem;
   transition: 0.4s ease-in-out;
-  
 }
 
-.eachSkills:hover{
+.eachSkills:hover {
   border: 3px solid black;
   transform: translateY(-10px) scale(1.03);
   box-shadow: 0 0 50px rgb(0, 0, 0);
-
 }
 
 /*  Contach page  */
 
-.contacts{
-max-height: 40vh;
+.contacts {
+  max-height: 40vh;
   background-image: url("./images/photo3.jpg");
-  
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 3rem;
-  border-top-left-radius:1rem ;
-
+  border-top-left-radius: 1rem;
 }
 
-.contact-heading{
+.contact-heading {
   font-size: 6rem;
   margin-top: 1rem;
   margin-bottom: 5rem;
   color: white;
 }
 
-.contact-info{
-width: 70%;
+.contact-info {
+  width: 70%;
 }
 
-.last-msg{
+.last-msg {
   font-size: 2rem;
-  backdrop-filter: blur(80px);
+  backdrop-filter: blur(40px);
   color: #fff; /* Set the text color */
-  text-shadow: 0 0 20px rgb(0, 0, 0), /* Blue glow */
-               0 0 40px rgb(7, 1, 1),
-               0 0 60px rgb(0, 0, 0),
-               0 0 80px rgb(20, 3, 3),
-               0 0 100px rgb(9, 9, 9),
-               0 0 120px rgb(6, 7, 7),
-               0 0 140px rgb(0, 0, 0);
 }
-
-
-
-
 
 /* Responsiveness of website  */
 
-@media  screen and (max-width:790px){
- *{
-  margin:0;
+@media screen and (max-width: 790px) {
+  * {
+    margin: 0;
+  }
+  section {
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .navbar {
+    display: none;
+  }
 
- }
- .logo{
-  display: flex;
-  justify-content: center;
- }
- .navbar{
-  display: none;
- }
- 
-  .home-content{
-    width:12rem;
+  .home-content {
+    width: 12rem;
 
     display: flex;
-  flex-direction: column;
-  }
-
-  .home-img img{
-    width:490px ;
-    border-radius: 3rem;
+    flex-direction: column;
     margin-bottom: 5rem;
   }
-  .skill-item{
-    margin-left: 2rem;
+
+  .home-img img {
+    width: 300px;
+    border-radius: 3rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+  }
+  .skill-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -559,26 +546,50 @@ width: 70%;
     flex-wrap: wrap;
   }
 
-  .skill-heading{
+  .skill-heading {
     font-size: 4rem;
   }
 
-  .service-container{
+  .service-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 
-  .service-info{
-    padding:0 ;
+  .service-info {
+    padding: 0;
+   
   }
-  .service-heading{
+  .service-box{
+    height: 30rem;
+  }
+  .service-heading {
     font-size: 2rem;
   }
 
-  .service-desc{
-font-size: 1rem;
-line-height: 0.8;
+  .service-desc {
+    font-size: 1rem;
+    line-height: 0.8;
   }
+
+
+  .text-animation span::before {
+    content: "Video Editor";
+    color: var(--main-color);
+    animation: words 14s infinite;
+  }
+  .text-animation span::after {
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100%+8px);
+    height: 50%;
+    border-left: 3px solid var(--bg-color);
+    right: -8px;
+    animation: cursor 0.5s infinite, typing 20s steps(11) infinite;
+  }
+  
+
+
 }
